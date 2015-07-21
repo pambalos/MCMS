@@ -11,17 +11,15 @@
 
 @interface CreaturePropertiesViewController ()
 @property MagicalCreature *currentCreature;
-
 @end
 
 @implementation CreaturePropertiesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(self.selectedCreature.name);
     self.title = self.selectedCreature.name;
-    
 }
+
 
 
 
