@@ -14,6 +14,8 @@
 		96B58CDF1B5EF4C2001B383B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B58CDE1B5EF4C2001B383B /* Images.xcassets */; };
 		96B58CE21B5EF4C2001B383B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B58CE01B5EF4C2001B383B /* LaunchScreen.xib */; };
 		96B58CEE1B5EF4C2001B383B /* MCMSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B58CED1B5EF4C2001B383B /* MCMSTests.m */; };
+		96B58CF91B5EF687001B383B /* MagicalCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B58CF81B5EF687001B383B /* MagicalCreature.m */; };
+		96B58CFD1B5F0483001B383B /* CreaturePropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B58CFC1B5F0483001B383B /* CreaturePropertiesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		96B58CE71B5EF4C2001B383B /* MCMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B58CEC1B5EF4C2001B383B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96B58CED1B5EF4C2001B383B /* MCMSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMSTests.m; sourceTree = "<group>"; };
+		96B58CF71B5EF687001B383B /* MagicalCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalCreature.h; sourceTree = "<group>"; };
+		96B58CF81B5EF687001B383B /* MagicalCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalCreature.m; sourceTree = "<group>"; };
+		96B58CFB1B5F0483001B383B /* CreaturePropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreaturePropertiesViewController.h; sourceTree = "<group>"; };
+		96B58CFC1B5F0483001B383B /* CreaturePropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreaturePropertiesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +89,9 @@
 			children = (
 				96B58CD51B5EF4C2001B383B /* AppDelegate.h */,
 				96B58CD61B5EF4C2001B383B /* AppDelegate.m */,
-				96B58CD81B5EF4C2001B383B /* ViewController.h */,
-				96B58CD91B5EF4C2001B383B /* ViewController.m */,
 				96B58CDB1B5EF4C2001B383B /* Main.storyboard */,
+				96B58CFE1B5F0490001B383B /* View Controllers */,
+				96B58CFA1B5EF68A001B383B /* Creature */,
 				96B58CDE1B5EF4C2001B383B /* Images.xcassets */,
 				96B58CE01B5EF4C2001B383B /* LaunchScreen.xib */,
 				96B58CD11B5EF4C2001B383B /* Supporting Files */,
@@ -117,6 +123,26 @@
 				96B58CEC1B5EF4C2001B383B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96B58CFA1B5EF68A001B383B /* Creature */ = {
+			isa = PBXGroup;
+			children = (
+				96B58CF71B5EF687001B383B /* MagicalCreature.h */,
+				96B58CF81B5EF687001B383B /* MagicalCreature.m */,
+			);
+			name = Creature;
+			sourceTree = "<group>";
+		};
+		96B58CFE1B5F0490001B383B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96B58CD81B5EF4C2001B383B /* ViewController.h */,
+				96B58CD91B5EF4C2001B383B /* ViewController.m */,
+				96B58CFB1B5F0483001B383B /* CreaturePropertiesViewController.h */,
+				96B58CFC1B5F0483001B383B /* CreaturePropertiesViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				96B58CDA1B5EF4C2001B383B /* ViewController.m in Sources */,
+				96B58CF91B5EF687001B383B /* MagicalCreature.m in Sources */,
 				96B58CD71B5EF4C2001B383B /* AppDelegate.m in Sources */,
+				96B58CFD1B5F0483001B383B /* CreaturePropertiesViewController.m in Sources */,
 				96B58CD41B5EF4C2001B383B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MagicalCreature.h"
+#import "CreaturePropertiesViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property NSMutableArray *creatures;
 
 
 @end
