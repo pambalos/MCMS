@@ -11,8 +11,9 @@
 @interface MagicalCreature : NSObject
 @property NSString *name;
 @property NSString *descriptionCreature;
+@property NSString *imageName;
 
--(instancetype)initWithName: (NSString *) name description: (NSString *) description;
+-(instancetype)initWithName: (NSString *) name description: (NSString *) description imageName:(NSString *)imageName;
 
 
 @end

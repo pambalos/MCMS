@@ -20,16 +20,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.creatures = [NSMutableArray arrayWithObjects:
-                      [[MagicalCreature new] initWithName:@"Galactic Being" description:@"A being who's self is galactical"],
-                      [[MagicalCreature new] initWithName:@"Cosmic Zombie" description:@"A cosmic being with dead properties"],
-                      [[MagicalCreature new] initWithName:@"Sentient Anti-Matter" description:@"A method for wholescale destruction"],
+                      [[MagicalCreature new] initWithName:@"Galactic Being" description:@"A being who's self is galactical" imageName:@"mummy"],
+                      [[MagicalCreature new] initWithName:@"Cosmic Zombie" description:@"A cosmic being with dead properties" imageName:@"werewolf"],
+                      [[MagicalCreature new] initWithName:@"Sentient Anti-Matter" description:@"A method for wholescale destruction" imageName:@"vampire"],
                       nil];
 
 }
 
 - (IBAction)onAddCreatureButtonPressed:(id)sender {
 
-    MagicalCreature *newCreature = [[MagicalCreature new] initWithName:self.creatureNameTextField.text description:self.creatureDescriptionTextField.text];
+    MagicalCreature *newCreature = [[MagicalCreature new] initWithName:self.creatureNameTextField.text description:self.creatureDescriptionTextField.text imageName: @"frankenstein"];
     [self.creatures addObject:newCreature];
     [self.creatureTableView reloadData];
     [self.view endEditing:YES];
@@ -54,6 +54,7 @@
     MagicalCreature *creature = [self.creatures objectAtIndex:indexPath.row];
     creatureCell.textLabel.text = creature.name;
     creatureCell.detailTextLabel.text = creature.descriptionCreature;
+    creatureCell.imageView.image = [UIImage imageNamed:creature.imageName];
     return creatureCell;
 }
 

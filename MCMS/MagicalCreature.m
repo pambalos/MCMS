@@ -10,13 +10,12 @@
 
 @implementation MagicalCreature
 
--(instancetype)initWithName: (NSString *) name description: (NSString *) description {
+-(instancetype)initWithName: (NSString *) name description: (NSString *) description imageName:(NSString *)imageName {
     if (self = [super init]) {
         _name = [name copy];
         _descriptionCreature = [description copy];
+        _imageName = [imageName copy];
     }
     return self;
 }
-
-
 @end
